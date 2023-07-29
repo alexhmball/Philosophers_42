@@ -1,17 +1,20 @@
 # Philosophers
 Dining Philosophers simulation with pthreads
 
-
-run with:
-./philo [number of philos] [time to die] [time to eat] [time to sleep] [optional: amount to eat]
-
+compile with make then run with:
+``` bash
+./philo <number of philos> <time to die> <time to eat> <time to sleep> <optional: amount to eat>
+```
 Philosophers should report their death no more that 10ms after the actual death of the philosopher
 
 <img width="330" alt="Screen Shot 2022-10-24 at 3 39 40 PM" src="https://user-images.githubusercontent.com/26721576/197517825-e060c7d1-cb2d-4474-89a8-d67aa41ef374.png">
 
-# Philosophers - Learning Outcomes and Reflection
+## Learning Outcomes and Reflection
+<p align="center">
+<img width="500" alt="philos" src="https://github.com/alexhmball/Philosophers_42/assets/26721576/0158219d-f1de-4b7d-8216-203fa70c2876">
+</p>
 
-The Philosophers project delved into the realm of philosophy and challenged me to create a simulation involving multiple philosophers sitting at a round table. The objective was to allow them to eat, think, and sleep while ensuring they did not starve or encounter deadly situations. The project explored the use of threads and mutexes to manage concurrency and synchronization effectively.
+The Philosophers project delved into the realm of philosophy and challenged me to create a simulation involving multiple philosophers sitting at a round table. There is a fork between each Philosopher and they need to take two forks to eat, therefore Philosophers sitting next to eachother cannot eat at the same time. The objective was to allow them to eat, think, and sleep while ensuring they did not starve or encounter deadly situations. Philosophers cannot talk to eachother and don't know when another is about to die, so synchronization is key. The project explored the use of threads and mutexes to manage concurrency and synchronization effectively.
 
 ## Learning Outcomes
 Throughout the Philosophers project, I achieved the following learning outcomes:
@@ -34,3 +37,11 @@ The Philosophers project was an intellectually stimulating experience that allow
 Through this project, I enhanced my problem-solving skills and learned to design robust simulations that adhere to specific requirements and constraints. Additionally, working on this project gave me a deeper appreciation for the complexities and challenges associated with managing concurrent systems.
 
 Overall, the Philosophers project provided me with valuable insights into the world of multithreading, synchronization, and philosophy. It was a rewarding experience that further solidified my understanding of these fundamental concepts in computer science.
+
+## References
+
+[1] <https://www.oreilly.com/library/view/pthreads-programming/9781449364724/ch01.html>
+
+[2] <https://www.geeksforgeeks.org/multithreading-in-c/>
+
+[3] <https://www.youtube.com/watch?v=d9s_d28yJq0&list=PLfqABt5AS4FmuQf70psXrsMLEDQXNkLq2>
